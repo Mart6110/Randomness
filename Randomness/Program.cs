@@ -10,7 +10,7 @@ namespace Randomness
             int numberOfTests = 100;
             int arraySize = 4;
 
-            string originalText = "Martinus";
+            string originalText = "MartinusÆØÅ";
             string encryptedText = Encrypter.Encrypt(originalText);
             string decryptedText = Encrypter.Decrypt(encryptedText);
 
