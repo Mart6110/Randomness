@@ -10,9 +10,12 @@ namespace Randomness
             int numberOfTests = 100;
             int arraySize = 4;
 
-            string originalText = "MartinusÆØÅ";
+            string originalText = "ABCDEFGHIJKLMNOPQRSTUVWXYZÆØÅ";
+            string originalText2 = "abcdefghijklmnopqrstuvwxzæøå";
             string encryptedText = Encrypter.Encrypt(originalText);
             string decryptedText = Encrypter.Decrypt(encryptedText);
+            string encryptedText2 = Encrypter.Encrypt(originalText2);
+            string decryptedText2 = Encrypter.Decrypt(originalText2);
 
             // Create an instance of RandomnessTester
             RandomnessTester tester = new RandomnessTester(numberOfTests, arraySize);
@@ -32,6 +35,9 @@ namespace Randomness
             Console.WriteLine();
             Console.WriteLine($"Encrypted text: {encryptedText}");
             Console.WriteLine($"Decrypted text: {decryptedText}");
+            Console.WriteLine();
+            Console.WriteLine($"Encrypted text: {encryptedText2}");
+            Console.WriteLine($"Decrypted text: {decryptedText2}");
         }
     }
 }

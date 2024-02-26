@@ -15,9 +15,12 @@ namespace Randomness
             // Define mapping for Danish characters
             Dictionary<char, char> danishCharMapping = new Dictionary<char, char>()
             {
-                {'æ', 'ø'},
-                {'ø', 'å'},
-                {'å', 'æ'}
+                {'æ', 'å'},
+                {'ø', 'æ'},
+                {'å', 'ø'},
+                {'Æ', 'Å'},
+                {'Ø', 'Æ'},
+                {'Å', 'Ø'}
             };
 
             // StringBuilder to store the encrypted text
@@ -66,7 +69,10 @@ namespace Randomness
             {
                 {'æ', 'å'},
                 {'ø', 'æ'},
-                {'å', 'ø'}
+                {'å', 'ø'},
+                {'Æ', 'Å'},
+                {'Ø', 'Æ'},
+                {'Å', 'Ø'}
             };
 
             // StringBuilder to store the decrypted text
